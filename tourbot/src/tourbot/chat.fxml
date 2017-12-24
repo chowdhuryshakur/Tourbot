@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="509.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tourbot.ChatController">
+   <children>
+      <AnchorPane prefHeight="509.0" prefWidth="444.0" style="-fx-background-color: #022744;">
+         <children>
+            <TextField fx:id="textField" layoutX="17.0" layoutY="457.0" prefHeight="31.0" prefWidth="321.0" style="-fx-background-color: #48AAF6;" />
+            <Button fx:id="sendButton" layoutX="342.0" layoutY="453.0" mnemonicParsing="false" onAction="#handleSendButtonAction" prefHeight="40.0" prefWidth="80.0" style="-fx-background-color: #022744; -fx-border-color: #D5E9F9;">
+            <graphic>
+                <ImageView fx:id="imageView1" fitHeight="30.0" fitWidth="70.0" layoutX="376.0" layoutY="465.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../ss.jpg" />
+               </image>
+            </ImageView>
+            </graphic>
+            </Button>
+            <TableView fx:id="tableView" layoutX="17.0" layoutY="14.0" prefHeight="425.0" prefWidth="406.0" style="-fx-background-color: #48AAF6;">
+              <columns>
+                <TableColumn fx:id="meTable" prefWidth="200.0" sortType="DESCENDING" style="-fx-background-color: #48AAF6;" text="me" />
+                <TableColumn fx:id="pijonTable" prefWidth="204.0" sortType="DESCENDING" style="-fx-background-color: #48AAF6;" text="pijon" />
+              </columns>
+            </TableView>
+            
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
